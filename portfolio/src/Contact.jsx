@@ -12,7 +12,7 @@ const Contact = () => {
 
             <div style={{
                 padding: "25px",
-                maxWidth: "600px",
+                maxWidth: "150px",
                 margin: "0 auto",
                 backgroundColor: "#1f2937",
                 borderRadius: "15px",
