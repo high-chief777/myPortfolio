@@ -1,0 +1,32 @@
+const Header = () => {
+    return (
+        <header style={{ 
+            display: "block", 
+            zIndex: 9999, 
+            height:"60px",
+            top: 0, 
+            justifyContent: "center", 
+            position: "sticky",
+            width: "100%" 
+        }}>
+            <nav>
+                <ul style={{
+                    listStyle: "none",
+                    display: "flex",
+                    gap: "20px",
+                    justifyContent: "center",
+                    margin: 0,
+                    padding: 0
+                }}>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
+
+export default Header
