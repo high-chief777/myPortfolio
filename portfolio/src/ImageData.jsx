@@ -1,5 +1,11 @@
 const projects = [
   {
+    name: "Subtitle Translator Overlay",
+    description: "Real-time subtitle translation overlay system",
+    img: "/projects/subtitle.png",
+    link: "https://github.com/high-chief777/subtitle-overlay"
+  },
+  {
     name: "BlackJack",
     description: "A single player blackjack game",
     img: "/projects/bj.png",
@@ -28,13 +34,7 @@ const projects = [
     description: "A simple task management app",
     img: "/projects/todo.png",
     link: "https://github.com/high-chief777/listodo"
-  },
-  {
-    name: "Hometown Promotion",
-    description: "Promoted local events and places",
-    img: "/projects/hometown.png",
-    link: "https://github.com/high-chief777/hometown_promotional"
   }
 ];
 
-export default projects
+export default projects;
