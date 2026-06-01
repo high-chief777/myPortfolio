@@ -5,7 +5,6 @@ import Hero from './Body.jsx'
 import Projects from './Projects.jsx'
 import SkillsBanner from './Skills.jsx'
 import Contact from './Contact.jsx'
-import CV from './CV.jsx'
 
 function App() {
   

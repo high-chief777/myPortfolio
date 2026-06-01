@@ -35,7 +35,7 @@ const Hero = () => {
       onMouseLeave={() => setHover(false)}
     >
       <div style={{ position: "relative", width: "250px", height: "250px" }}>
-        {/* Outer glow layer */}
+        
         <div
           style={{
             position: "absolute",
@@ -56,10 +56,10 @@ const Hero = () => {
             )`,
             filter: "blur(20px)",
             opacity: "0.6",
+            zIndex: 0,
           }}
         />
-        
-        {/* Main neon ring */}
+
         <div
           style={{
             position: "absolute",
@@ -78,12 +78,11 @@ const Hero = () => {
               #ffbe0b,
               #ff006e
             )`,
-            padding: "0px",
             filter: "drop-shadow(0 0 15px rgba(255, 0, 110, 0.8))",
+            zIndex: 1,
           }}
-        ></div>
+        />
 
-        
         <img
           src="./me.jpg"
           alt="Me"
@@ -92,24 +91,46 @@ const Hero = () => {
             height: "245px",
             objectFit: "cover",
             borderRadius: "50%",
-            
-            boxShadow: "0 6px 15px rgba(0,0,0,0.5)",
             position: "relative",
             zIndex: 2,
+            boxShadow: "0 6px 15px rgba(0,0,0,0.5)",
           }}
         />
       </div>
 
-      <div style={{ display: "flex", flexDirection: "column", color: "#e5e7eb" }}>
-        <h1 style={{ margin: "0", fontSize: "2.2em" }}>Samip Ghimire</h1>
-        <h3 style={{ color: "#9ca3af", margin: "5px 0 15px", fontWeight: "400", fontSize: "1.1em" }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          color: "#e5e7eb",
+        }}
+      >
+        <h1 style={{ margin: "0", fontSize: "2.2em" }}>
+          Samip Ghimire
+        </h1>
+
+        <h3
+          style={{
+            color: "#9ca3af",
+            margin: "5px 0 15px",
+            fontWeight: "400",
+            fontSize: "1.1em",
+          }}
+        >
           Web Developer & ML Enthusiast
         </h3>
-        <p style={{ maxWidth: "350px", lineHeight: "1.6", color: "#d1d5db" }}>
-          I am a Computer Engineering student at Tribhuvan University with a focus on
-          web development and machine learning. I enjoy creating interactive web
-          applications, exploring ML models, and applying technology to solve
-          real-world problems.
+
+        <p
+          style={{
+            maxWidth: "350px",
+            lineHeight: "1.6",
+            color: "#d1d5db",
+          }}
+        >
+          I am a Computer Engineering student at Tribhuvan University with a
+          focus on web development and machine learning. I enjoy creating
+          interactive web applications, exploring ML models, and applying
+          technology to solve real-world problems.
         </p>
       </div>
     </div>
